@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Thrift</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   <style>
+    .contact{
+
+    padding:100px 8%;
+
+    background:linear-gradient(135deg,#f7ffff,#eefdfb);
+
+}
+
+.sectionTitle{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.sectionTitle h4{
+
+    color: #5b6040;
+    font-size: 20px;
+    letter-spacing:2px;
+    font-weight: 500;
+    margin-bottom:10px;
+
+}
+
+.sectionTitle h2{
+
+    font-size:45px;
+
+    color:#163b3d;
+
+    margin-bottom:20px;
+
+}
+
+.sectionTitle p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.contactContainer{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+/*================ CONTACT INFO ================*/
+
+.contactInfo{
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+.infoCard{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    background:black;
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.4s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.infoCard:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px olive;
+
+}
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    background: #5b6040;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    flex-shrink:0;
+
+    transition:.4s;
+
+}
+
+.infoCard:hover .icon{
+
+    transform:rotate(360deg) scale(1.1);
+
+}
+
+.infoCard h3{
+
+    color:white;
+
+    margin-bottom:12px;
+
+    font-size:22px;
+
+}
+
+.infoCard p{
+
+    color:white;
+
+    line-height:1.7;
+
+}
+
+/*================ CONTACT FORM ================*/
+
+.contactForm{
+
+    background:black;
+
+    backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.contactForm h3{
+
+    text-align:center;
+
+    color:olive;
+
+    margin-bottom:30px;
+
+    font-size:30px;
+
+}
+
+.inputGroup{
+
+    margin-bottom:25px;
+
+}
+
+.inputGroup input,
+
+.inputGroup textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:15px;
+
+    background:white;
+
+    font-size:16px;
+
+    transition:.4s;
+
+}
+
+.inputGroup input:focus,
+
+.inputGroup textarea:focus{
+
+    background:white;
+
+    box-shadow:0 0 0 3px rgba(0,191,165,.25);
+
+}
+
+.contactBtn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#5b6040;
+
+    color:black;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.contactBtn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px #5b6040;
+
+}
+
+   </style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+    <span><i class="fa-solid fa-recycle"></i> Sustainable Style. Second Hand. First Choice.</span>
+    <span><i class="fa-solid fa-truck"></i> Free Shipping on Orders Above PKR 3,000</span>
+</div>
+
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">
+        URBAN
+        <small>THRIFT</small>
+    </div>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="products.html">SHOP</a>
+         <a href="collections.html">COLLECTIONS</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <div class="icons">
+        <a href="products.html#search" aria-label="Search products"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <span><i class="fa-solid fa-user"></i></span>
+        <a href="products.html#cart" aria-label="Open shopping cart"><i class="fa-solid fa-shopping-cart"></i></a>
+    </div>
+</header>
+
+<section class="contact" id="contact">
+
+    <div class="sectionTitle">
+
+        <h4>CONTACT US</h4>
+
+        <h2>We're Here To Help</h2>
+
+        <p>
+            Have questions about our shop or products?
+            Contact our friendly team anytime.
+        </p>
+
+    </div>
+
+    <div class="contactContainer">
+
+        <!-- Contact Information -->
+
+        <div class="contactInfo">
+
+            <div class="infoCard">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>shop Address</h3>
+
+                    <p>
+                        street 11,DHA,
+                        Karachi,Pakistan
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="infoCard">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Call Us</h3>
+
+                    <p>+92 300 1234567</p>
+
+                    <p>+92 321 9876543</p>
+
+                </div>
+
+            </div>
+
+            <div class="infoCard">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Email</h3>
+
+                    <p>info@Urbanthrift.com</p>
+
+                    <p>support@Urbanthrift.com</p>
+
+                </div>
+
+            </div>
+
+            <div class="infoCard">
+
+                <div class="icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <div>
+
+                    <h3>Open Hours</h3>
+
+                    <p>Monday - Saturday</p>
+
+                    <p>09:00 AM - 08:00 PM</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="contactForm">
+
+            <h3>Send Us A Message</h3>
+
+            <form id="contactForm">
+
+                <div class="inputGroup">
+
+                    <input type="text" placeholder="Your Name" required>
+
+                </div>
+
+                <div class="inputGroup">
+
+                    <input type="email" placeholder="Email Address" required>
+
+                </div>
+
+                <div class="inputGroup">
+
+                    <input type="tel" placeholder="Phone Number">
+
+                </div>
+
+                <div class="inputGroup">
+
+                    <textarea
+                    rows="6"
+                    placeholder="Write Your Message..."
+                    required></textarea>
+
+                </div>
+
+                <button type="submit" class="contactBtn">
+
+                    Send Message
+
+                </button>
+                <div id="contactSuccess">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+
+    <p>
+        Thank you for contacting us. Our team will get back to you soon.
+    </p>
+
+</div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-logo">
+        <h2>URBAN</h2>
+        <span>THRIFT</span>
+
+        <p>
+            Urban thrifted fashion<br>
+            for a better future.
+        </p>
+
+        <div class="social">
+            Instagram &nbsp; TikTok &nbsp; Facebook
+        </div>
+    </div>
+
+    <div>
+        <h3>SHOP</h3>
+        <a href="#">All Products</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Best Sellers</a>
+        <a href="#">Sale</a>
+    </div>
+
+    <div>
+        <h3>CUSTOMER CARE</h3>
+        <a href="#">Shipping & Delivery</a>
+        <a href="#">Returns & Exchanges</a>
+        <a href="#">FAQ</a>
+        <a href="#">Size Guide</a>
+    </div>
+
+    <div>
+        <h3>ABOUT US</h3>
+        <a href="#">Our Story</a>
+        <a href="#">Sustainability</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+    </div>
+
+    <div>
+        <h3>CONTACT</h3>
+        <p><i class="fa-solid fa-phone"></i> +92 300 1234567</p>
+        <p><i class="fa-solid fa-envelope"></i> hello@urbanthrift.com</p>
+        <p><i class="fa-solid fa-map-pin"></i> Lahore, Pakistan</p>
+    </div>
+
+</footer>
+
+<div class="copyright">
+    <i class="fa-regular fa-copyright"></i> 2026 Urban Thrift. All Rights Reserved.
+</div>
+
+
+</body>
+</html>
